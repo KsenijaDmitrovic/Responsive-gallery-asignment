@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: lightpink;
+        }
+
+        #grid-container {
+            max-width: 960px;
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 8px;
+            margin-left: 8px;
+        }
+
+        div [class*="box"] {
+            background-color: cornflowerblue;            
+            margin-top: 3em;
+            border-radius: 8px;
+        }
+
+        @media screen and (max-width:1024px) {
+            #grid-container {
+                grid-template-columns: repeat(5, 1fr);
+
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            #grid-container {
+                grid-template-columns: repeat(3, 1fr);
+
+            }
+        }
+
+        @media screen and (max-width:414px) {
+            #grid-container {
+                grid-template-columns: repeat(1, 1fr);
+
+            }
+        }
+
+        @media screen and (max-width:1024px) {
+            p {
+                font-size: 0.9em;
+
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            p {
+                font-size: 0.8em;
+
+            }
+        }
+
+        @media screen and (max-width:414px) {
+            p {
+                font-size: 0.7em;
+
+            }
+        }
+
+        img {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            width: 100%;
+        }
+
+        figcaption {
+            text-align: center;
+            background-color: white;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            height: 2em;
+            padding-top: 5px;
+        }
+
+        p {
+            margin-top: 2em;
+        }
+
+        h1 {
+            margin-top: 15px;
+            margin-left: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Gallery Heading</h1>
+
+    <div id="grid-container">
+
+        <div class="box1">
+            <figure>
+                <img src="placeholder-image.png" alt="placeholder-image" width="100%"
+                    style="background-color: cornflowerblue;">
+                <figcaption> Image Title </figcaption>
+            </figure>
+        </div>
+        <div class="box2">
+            <figure>
+                <img src="placeholder-image.png" alt="placeholder-image" width="100%"
+                    style="background-color: cornflowerblue;">
+                <figcaption> Image Title </figcaption>
+            </figure>
+        </div>
+        <div class="box3">
+            <figure>
+                <img src="placeholder-image.png" alt="placeholder-image" width="100%"
+                    style="background-color: cornflowerblue;">
+                <figcaption class="text"> Image Title </figcaption>
+            </figure>
+        </div>
+        <div class="box4">
+            <figure>
+                <img src="placeholder-image.png" alt="placeholder-image" width="100%"
+                    style="background-color: cornflowerblue;">
+                <figcaption> Image Title </figcaption>
+            </figure>
+        </div>
+        <div class="box5">
+            <figure>
+                <img src="placeholder-image.png" alt="placeholder-image" width="100%"
+                    style="background-color: cornflowerblue;">
+                <figcaption> Image Title </figcaption>
+            </figure>
+        </div>
+        <div class="box6">
+            <figure>
+                <img src="placeholder-image.png" alt="placeholder-image" width="100%"
+                    style="background-color: cornflowerblue;">
+                <figcaption> Image Title </figcaption>
+            </figure>
+        </div>
+        <div class="box7">
+            <figure>
+                <img src="placeholder-image.png" alt="placeholder-image" width="100%"
+                    style="background-color: cornflowerblue;">
+                <figcaption> Image Title </figcaption>
+            </figure>
+        </div>
+        <div class="box8">
+            <figure>
+                <img src="placeholder-image.png" alt="placeholder-image" width="100%"
+                    style="background-color: cornflowerblue;">
+                <figcaption> Image Title </figcaption>
+            </figure>
+        </div>
+        <div class="box9">
+            <figure>
+                <img src="placeholder-image.png" alt="placeholder-image" width="100%"
+                    style="background-color: cornflowerblue;">
+                <figcaption> Image Title </figcaption>
+            </figure>
+        </div>
+        <div class="box10">
+            <figure>
+                <img src="placeholder-image.png" alt="placeholder-image" width="100%"
+                    style="background-color: cornflowerblue;">
+                <figcaption> Image Title </figcaption>
+            </figure>
+        </div>
+
+
+
+    </div>
+
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+        ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum."</p>
+
+
+</body>
+
+</html>
